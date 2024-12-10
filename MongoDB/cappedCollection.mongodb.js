@@ -5,10 +5,19 @@
 
 */
 
-show ('collections')
+// use ('test')
 
-// db.createCollection('myCapped', {capped : true , size : 100 , max : 3});
+// db.createCollection('myCapped',{capped : true , size : 100 , max:3})
 
 
+// db.runCommand( {convetToCapped : 'log2', size : 100})
 
-// db.runCommand({convertToCapped : 'orders' , size : 100 , max : 3})
+
+// db.developers.find()
+
+// db.createView( "AgedPerson" , 'developers' , [
+
+//     {$group : {_id : "$role" ,  Age : {$max : "$age"}} }
+// ])
+
+db.AgedPerson.find()
